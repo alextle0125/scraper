@@ -1,0 +1,12 @@
+<header>
+	<h1>Coinbase Statistics</h1>
+</header>
+<section>
+	<% @coinbase_stats.each do |coinbase_stat| %>
+		<h4>Timemap:<span> <%= coinbase_stat[:timemap] %></span></h4>
+		<h4>Users:<span> <%= coinbase_stat[:users] %></span></h4>
+		<h4>Wallets:<span> <%= coinbase_stat[:wallets] %></span></h4>
+		<h4>Merchants:<span> <%= coinbase_stat[:merchants] %></span></h4>
+		<h4>Developer Apps:<span> <%= coinbase_stat[:apps] %></span></h4>
+	<% end %>
+</section>
